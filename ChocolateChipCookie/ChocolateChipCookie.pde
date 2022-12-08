@@ -7,7 +7,7 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //Assignment: Display Alogrithm from Hello World
-  display(); 
+  //display(); 
   //Display Algorithm will populate smaller and larger dimensions
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 }//End setup
