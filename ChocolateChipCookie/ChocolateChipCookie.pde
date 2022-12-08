@@ -1,7 +1,8 @@
 //Global Variables
+int appWidth, appHeight, smallerDimension, largerDimension;
 //
 void setup() {
-  size();
+  size(600, 400);
   //fullScreen(); //displayWidth //displayHeight
   appWidth = width;
   appHeight = height;
