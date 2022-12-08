@@ -7,7 +7,9 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //Assignment: Display Alogrithm from Hello World
-  
+  display(); 
+  //Display Algorithm will populate smaller and larger dimensions
+  println("", smallerDimension, "", largerDimension);
 }//End setup
 //
 void draw() {
