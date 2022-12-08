@@ -9,7 +9,7 @@ void setup() {
   //Assignment: Display Alogrithm from Hello World
   display(); 
   //Display Algorithm will populate smaller and larger dimensions
-  println("", smallerDimension, "", largerDimension);
+  println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 }//End setup
 //
 void draw() {
