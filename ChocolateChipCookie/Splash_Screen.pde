@@ -3,10 +3,10 @@ void splashScreen() {
    - background image
    */
   //
-  /* Any other code for Splach Screen goes below
+  /* Any other code for Splash Screen goes below
    - Start Button
    - Any other instructions
-   - SPlash Screen Details
+   - Splash Screen Details
    */
    background(255); //Testing only, not night mode friendly, full BLUE
 }//End splashScreen
