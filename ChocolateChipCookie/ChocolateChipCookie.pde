@@ -22,6 +22,8 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
+  //OS Level Mouse Click
+  if ( OS_on==false ) ;//End OS Level Mouse Click
 }//End mousePressed
 //
 //End MAIN Program
