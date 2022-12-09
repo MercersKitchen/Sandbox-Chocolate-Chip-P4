@@ -13,6 +13,9 @@ void setup() {
 }//End setup
 //
 void draw() {
+  //Assginment #2: OS Level Mouse Click and Splash Screen
+  if () splashScreen; //OS Level Mouse Click
+  //
 }//End draw
 //
 void keyPressed() {
