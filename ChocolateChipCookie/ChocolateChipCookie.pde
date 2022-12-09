@@ -1,5 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
+Boolean OS_on=false;
 //
 void setup() {
   size(600, 400);
