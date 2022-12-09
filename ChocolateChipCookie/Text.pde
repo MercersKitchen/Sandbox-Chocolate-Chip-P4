@@ -1,4 +1,3 @@
-String spaceBar = "Press the SPACE BAR to continue";
 PFont harrington;
 //
 void textSetup() {
@@ -19,6 +18,7 @@ void spaceBarText() {
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 50; //Change the number until it fits
   textFont(harrington, size); 
+  String spaceBar = "Press the SPACE BAR to continue";
   text( spaceBar, startX, startY, startWidth, startHeight );
   fill(resetDefaultInk);
 }//End spaceBarText
