@@ -15,7 +15,7 @@ void setup() {
 //
 void draw() {
   //Assginment #2: OS Level Mouse Click and Splash Screen
-  if ( OS_on==true ) splashScreen; //OS Level Mouse Click
+  if ( OS_on==true ) splashScreen(); //OS Level Mouse Click
   //
 }//End draw
 //
