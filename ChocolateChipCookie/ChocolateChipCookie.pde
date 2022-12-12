@@ -22,14 +22,19 @@ void setup() {
 //
 void draw() {
   //Assginment #2: OS Level Mouse Click and Splash Screen
-  if ( OS_on==true ) splashScreen(); //OS Level Mouse Click
+  if ( OS_on==true && splashScreenStart==false ) splashScreen(); //OS Level Mouse Click
   if ( splashScreenStart==true ) homeScreen();
   //
 }//End draw
 //
 void keyPressed() {
   //Splash Screen SPACE Bar
-  if ( OS_on==true && key==' ' ) splashScreenStart = true;
+  if ( OS_on==true && key==' ' ) {
+    splashScreenStart = true;
+    backgroundWhiteScreen();
+    backgroundImage();
+  }//End Splash Screen SPACE Bar
+  //
 }//End keyPressed
 //
 void mousePressed() {

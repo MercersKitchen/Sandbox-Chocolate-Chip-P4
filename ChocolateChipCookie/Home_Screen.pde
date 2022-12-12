@@ -19,7 +19,11 @@ void backgroundWhiteScreen() {
   noStroke();
   rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight );
   strokeWeight(1); //Reset: 1 pixel
-  fill(); //Reset: white
+  fill(white); //Reset: white
 }//End backgroundWhiteScreen()
+//
+void backgroundImage() {
+  
+}//End backgroundImage
 //
 //End Home Screen Subprogram
