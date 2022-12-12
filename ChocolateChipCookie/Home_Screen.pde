@@ -1,3 +1,5 @@
+int backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+//
 void homeScreen() {
   println("Arrived at Home Screen"); //Testing for Splash Screen Start Button
   /* Home Screen Expectations
@@ -13,7 +15,11 @@ void homeScreen() {
 }//End homeScreen
 //
 void backgroundWhiteScreen() {
-  rect();
+  fill(white);
+  noStroke();
+  rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight );
+  strokeWeight(1); //Reset: 1 pixel
+  fill(); //Reset: white
 }//End backgroundWhiteScreen()
 //
 //End Home Screen Subprogram

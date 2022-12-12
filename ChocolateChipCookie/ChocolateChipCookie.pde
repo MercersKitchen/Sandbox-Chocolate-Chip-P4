@@ -5,7 +5,7 @@ Boolean OS_on=false, splashScreenStart=false;
  Purple not for Night Mode, full BLUE
  resetDefaultInk is WHITE, not Night Mode Friendly, full BLUE
  */
-color purple=#FF00FF, resetDefaultInk=#FFFFFF;
+color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 //
 void setup() {
   size(600, 400);
