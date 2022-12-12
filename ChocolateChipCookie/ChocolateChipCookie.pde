@@ -29,7 +29,7 @@ void draw() {
 //
 void keyPressed() {
   //Splash Screen SPACE Bar
-  if ( key==' ' ) splashScreenStart = true;
+  if ( OS_on==true && key==' ' ) splashScreenStart = true;
 }//End keyPressed
 //
 void mousePressed() {
