@@ -35,6 +35,13 @@ void keyPressed() {
     backgroundImage();
   }//End Splash Screen SPACE Bar
   //
+  //Key Board Short Cuts
+  if () exit();
+  if ( key=='Q' || key=='q' ) exit();
+  if ( key=='N' || key=='n' ) {
+    //Night Mode
+  }
+  //
 }//End keyPressed
 //
 void mousePressed() {
