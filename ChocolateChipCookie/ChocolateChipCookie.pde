@@ -40,7 +40,13 @@ void keyPressed() {
   if ( key==CODED && keyCode==ESC ) exit();
   if ( key=='Q' || key=='q' ) exit();
   if ( key=='N' || key=='n' ) {
-    if ( nightMode==true ) { nightMode=false; } else { nightMode=true; }
+    if ( nightMode==true ) { 
+      nightMode=false;
+      backgroundImage();
+    } else { 
+      nightMode=true;
+      backgroundImage();
+    }
   }
   //
 }//End keyPressed
