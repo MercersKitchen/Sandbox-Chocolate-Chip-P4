@@ -16,7 +16,8 @@ int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85; //BLUE shoul
 void homeScreen() {
   println("Arrived at Home Screen"); //Testing for Splash Screen Start Button
   //
-  rect( quitX, quitY, quitWidth, quitHeight );
+  //rect( quitX, quitY, quitWidth, quitHeight );
+  quitButtonText();
 }//End homeScreen
 //
 void backgroundWhiteScreen() {
