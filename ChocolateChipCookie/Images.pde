@@ -19,15 +19,21 @@ void quitButtonImage() {
     largerDimension = quitButtonImageWidth;
     smallerDimension = quitButtonImageHeight;
     //
-    quitButtonImageWidth_Adjusted = quitButtonImageRectWidth;
+    quitButtonImageWidth_Adjusted = quitButtonImageRectWidth; //Uses builtin compression algorithm
     imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageHeight_Calculated = quitButtonImageWidth_Adjusted * imageHeightRatio;
     //
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated);
     //
-  } else {
+  } else { //Portrait
     largerDimension = quitButtonImageHeight;
     smallerDimension = quitButtonImageWidth;
+    //
+    quitButtonImageHeight_Adjusted = quitButtonImageRectHeight; //Uses builtin compression algorithm
+    imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
+    quitButtonImageHeight_Calculated = quitButtonImageWidth_Adjusted * imageHeightRatio;
+    //
+    image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated);
     //
   }
   //
