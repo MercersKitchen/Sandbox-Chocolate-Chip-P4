@@ -19,7 +19,11 @@ void homeScreen() {
   //
   //rect( quitX, quitY, quitWidth, quitHeight );
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) { //QuitButton Hoverover
+    fill(white);
+    noStroke();
     rect( quitX, quitY, quitWidth, quitHeight );
+    strokeWeight(1); //Reset: 1 pixel
+    noFill();
     quitButtonImage(); //Cookie, aspect ratio
     /*
     fill(white);
@@ -27,7 +31,11 @@ void homeScreen() {
      noFill();
      */
   } else {
+    fill(white);
+    noStroke();
     rect( quitX, quitY, quitWidth, quitHeight );
+    strokeWeight(1); //Reset: 1 pixel
+    noFill();
     quitButtonText();
   }
 }//End homeScreen
@@ -37,7 +45,7 @@ void backgroundWhiteScreen() {
   noStroke();
   rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight );
   strokeWeight(1); //Reset: 1 pixel
-  fill(white); //Reset: white
+  noFill();
 }//End backgroundWhiteScreen()
 //
 void backgroundImage() {
