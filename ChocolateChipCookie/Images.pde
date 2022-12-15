@@ -25,7 +25,7 @@ void quitButtonImage() {
     //
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
-    quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted;
+    quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated);
     //
   } else { //Portrait
@@ -36,6 +36,9 @@ void quitButtonImage() {
     imageWidthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageWidth_Calculated = quitButtonImageHeight_Adjusted * imageWidthRatio;
     //
+    //Debugging: x-value must be centered
+    float centerX=appWidth*1/2;
+    quitButtonImageRectX = centerX - quitButtonImageWidth_Calculated * 1/2;
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted);
     //
   }
