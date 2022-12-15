@@ -37,8 +37,9 @@ void quitButtonImage() {
     //
   }
   //
-  //No Aspect Ratio
-  image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
+  /*No Aspect Ratio
+   image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
+   */
   //
 }//End quitButtonImage
 //
