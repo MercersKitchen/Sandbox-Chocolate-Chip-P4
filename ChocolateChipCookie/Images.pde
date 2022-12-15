@@ -23,6 +23,9 @@ void quitButtonImage() {
     imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageHeight_Calculated = quitButtonImageWidth_Adjusted * imageHeightRatio;
     //
+    //Debugging: x-value must be centered
+    float centerX=appWidth*1/2;
+    quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted;
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated);
     //
   } else { //Portrait
