@@ -30,10 +30,10 @@ void quitButtonImage() {
     smallerDimension = quitButtonImageWidth;
     //
     quitButtonImageHeight_Adjusted = quitButtonImageRectHeight; //Uses builtin compression algorithm
-    imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
-    quitButtonImageHeight_Calculated = quitButtonImageWidth_Adjusted * imageHeightRatio;
+    imageWidthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
+    quitButtonImageWidth_Calculated = quitButtonImageHeight_Adjusted * imageWidthRatio;
     //
-    image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated);
+    image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted);
     //
   }
   //
