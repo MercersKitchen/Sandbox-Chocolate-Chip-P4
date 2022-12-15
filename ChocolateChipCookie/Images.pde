@@ -7,7 +7,7 @@ void imagePopulation() {
 void quitButtonImage() {
   quitButtonImage = backGroundImage;
   rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
-  image( quitButtonImage, );
+  image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
 }//End quitButtonImage
 //
 //End Image Subprogram
