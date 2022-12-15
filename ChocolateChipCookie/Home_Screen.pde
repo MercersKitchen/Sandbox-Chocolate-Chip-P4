@@ -18,10 +18,12 @@ void homeScreen() {
   //
   //rect( quitX, quitY, quitWidth, quitHeight );
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) { //QuitButton Hoverover
-    //Cookie, aspect ratio
+    quitButtonImage(); //Cookie, aspect ratio
+    /*
     fill(white);
-    rect( quitX, quitY, quitWidth, quitHeight ); //testing only
-    noFill();
+     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
+     noFill();
+     */
   } else {
     quitButtonText();
   }
