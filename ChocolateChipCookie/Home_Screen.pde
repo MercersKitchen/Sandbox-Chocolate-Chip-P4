@@ -15,35 +15,10 @@ int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85; //BLUE shoul
  */
 //
 void homeScreen() {
-  println("Arrived at Home Screen"); //Testing for Splash Screen Start Button
+  //println("Arrived at Home Screen"); //Testing for Splash Screen Start Button
   //
   //rect( quitX, quitY, quitWidth, quitHeight );
-  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) { //QuitButton Hoverover
-    fill(white);
-    noStroke();
-    float centerX=appWidth*1/2;
-    float quitX_whiteScreen = centerX - appWidth * 1/15;
-    float quitWidth_whiteScreen = appWidth * 1/8;
-    rect( quitX_whiteScreen, quitY, quitWidth_whiteScreen, quitHeight );
-    strokeWeight(1); //Reset: 1 pixel
-    noFill();
-    quitButtonImage(); //Cookie, aspect ratio
-    /*
-    fill(white);
-     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
-     noFill();
-     */
-  } else {
-    fill(white);
-    noStroke();
-    float centerX=appWidth*1/2;
-    float quitX_whiteScreen = centerX - appWidth * 1/15;
-    float quitWidth_whiteScreen = appWidth * 1/8;
-    rect( quitX_whiteScreen, quitY, quitWidth_whiteScreen, quitHeight );
-    strokeWeight(1); //Reset: 1 pixel
-    noFill();
-    quitButtonText();
-  }
+  quitButtonHoverOver();
 }//End homeScreen
 //
 void backgroundWhiteScreen() {
@@ -56,8 +31,7 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  if ( nightMode==false ) tint( tintDayMode, tintDayModeOpacity ); //Day Mode, see ternary operator
-  if ( nightMode==true ) tint( tintRed, tintGreen, tintBlue, tintNightModeOpacity ); //Night Mode, see ternary operator
+  imageNightMode();
   image( backGroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight );
 }//End backgroundImage
 //

@@ -4,6 +4,11 @@ void imagePopulation() {
   backGroundImage = loadImage ("../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
 }//End imagePopulation
 //
+void imageNightMode() {
+  if ( nightMode==false ) tint( tintDayMode, tintDayModeOpacity ); //Day Mode, see ternary operator
+  if ( nightMode==true ) tint( tintRed, tintGreen, tintBlue, tintNightModeOpacity ); //Night Mode, see ternary operator
+}//End imageNightMode
+//
 void quitButtonImage() {
   quitButtonImage = backGroundImage;
   rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
@@ -26,6 +31,7 @@ void quitButtonImage() {
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
+    imageNightMode();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated);
     //
   } else { //Portrait
@@ -39,6 +45,7 @@ void quitButtonImage() {
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Calculated * 1/2;
+    imageNightMode();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted);
     //
   }
@@ -48,5 +55,34 @@ void quitButtonImage() {
    */
   //
 }//End quitButtonImage
+//
+void quitButtonHoverOver() {
+  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) { //QuitButton Hoverover
+    fill(white);
+    noStroke();
+    float centerX=appWidth*1/2;
+    float quitX_whiteScreen = centerX - appWidth * 1/15;
+    float quitWidth_whiteScreen = appWidth * 1/8;
+    rect( quitX_whiteScreen, quitY, quitWidth_whiteScreen, quitHeight );
+    strokeWeight(1); //Reset: 1 pixel
+    noFill();
+    quitButtonImage(); //Cookie, aspect ratio
+    /*
+    fill(white);
+     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
+     noFill();
+     */
+  } else {
+    fill(white);
+    noStroke();
+    float centerX=appWidth*1/2;
+    float quitX_whiteScreen = centerX - appWidth * 1/15;
+    float quitWidth_whiteScreen = appWidth * 1/8;
+    rect( quitX_whiteScreen, quitY, quitWidth_whiteScreen, quitHeight );
+    strokeWeight(1); //Reset: 1 pixel
+    noFill();
+    quitButtonText();
+  }
+}//End quitButtonHoverOver
 //
 //End Image Subprogram
