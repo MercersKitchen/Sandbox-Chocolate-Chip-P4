@@ -5,8 +5,14 @@ void imagePopulation() {
 }//End imagePopulation
 //
 void imageNightMode() {
-  if ( nightMode==false ) tint( tintDayMode, tintDayModeOpacity ); //Day Mode, see ternary operator
-  if ( nightMode==true ) tint( tintRed, tintGreen, tintBlue, tintNightModeOpacity ); //Night Mode, see ternary operator
+  //if ( nightMode==false ) tint( tintDayMode, tintDayModeOpacity ); //Day Mode, see ternary operator
+  //if ( nightMode==true ) tint( tintRed, tintGreen, tintBlue, tintNightModeOpacity ); //Night Mode, see ternary operator
+  //
+  if ( nightMode==true ) {
+    tint( tintRed, tintGreen, tintBlue, tintNightModeOpacity );
+  } else {
+    tint( tintDayMode, tintDayModeOpacity );
+  }
 }//End imageNightMode
 //
 void quitButtonImage() {
